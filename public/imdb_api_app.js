@@ -119,7 +119,6 @@ class MovieTable extends React.Component {
 	}
 }
 
-
 class MovieSearch extends React.Component {
 	constructor(props) {
 		super(props);
