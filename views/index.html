@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <!-- Meta -->
-	  <meta charset="utf-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>IMDB Search</title>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>IMDB Search</title>
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -33,11 +33,11 @@
 			<h4 class="text-center"><a href='/favorites'>View Favorites</a></h2>
 			
 			<!-- Form for the search term -->		  
-		  <div class="form-group">
-		    <label for="search-term">Movie Search Term</label>
-		    <input type="text" class="form-control" id="searchTerm" placeholder="Star Wars">
-		  </div>
- 			<button type="submit" class="btn btn-primary" id="searchSubmit">Search</button>
+			<div class="form-group">
+				<label for="search-term">Movie Search Term</label>
+				<input type="text" class="form-control" id="searchTerm" placeholder="Star Wars">
+			</div>
+			<button type="submit" class="btn btn-primary" id="searchSubmit">Search</button>
 
 			</br>
 			</br>
@@ -47,25 +47,25 @@
 
 			<!-- Data Detail View Modal -->
 			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" id="detailView">
-			  <div class="modal-dialog modal-lg" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	       			  <h4 class="modal-title" id="modalTitle"></h4>
-	      		</div>
-	      		<div class="modal-body">
-	      			<ul class="modalList">
-		   			 	  <li><b>Plot: </b><span id="detailPlot"></span></li>
-		   			 	  <li><b>Actors: </b><span id="detailActors"></span></li>
-		   			 	  <li><b>Genre: </b><span id="detailGenre"></span></li>
-	   			 	  </ul>
-	       		</div>
-			    </div>
-			  </div>
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="modalTitle"></h4>
+						</div>
+						<div class="modal-body">
+							<ul class="modalList">
+								<li><b>Plot: </b><span id="detailPlot"></span></li>
+								<li><b>Actors: </b><span id="detailActors"></span></li>
+								<li><b>Genre: </b><span id="detailGenre"></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 
-		  <script src="/imdb_api_app.js"></script>
-		  
+			<script src="/imdb_api_app.js"></script>
+			
 		</body>
 	</div>
 </html>

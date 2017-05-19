@@ -13,7 +13,7 @@ function retrieveData(query, page, func) {
 
 	xhr.onreadystatechange = function() {
 		if(xhr.readyState === 4 && xhr.status === 200) {
-		    func(xhr.responseText);
+			func(xhr.responseText);
 		}
 	}
 }
