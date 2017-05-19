@@ -97,6 +97,7 @@ class MovieTable extends React.Component {
 	render() {
 		const { data } = this.props;
 		const rows = data.map((movie) => {
+			// Use ES6 features to set variables equal to JSON key names
 			let {Title, Year, Type, imdbID} = movie;
 			return <MovieTableRow key={imdbID} imdbID={imdbID} title={Title} year={Year} type={Type}/>
 		})
