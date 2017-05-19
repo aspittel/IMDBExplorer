@@ -13,6 +13,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+		<script src="https://unpkg.com/react@latest/dist/react.js"></script>
+		<script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
 		<style type="text/css">
 			.hoverPointer {
 				cursor: pointer;
@@ -32,18 +36,8 @@
 			<h1 class="text-center">IMDB API Explorer</h1>
 			<h4 class="text-center"><a href='/favorites'>View Favorites</a></h2>
 			
-			<!-- Form for the search term -->		  
-			<div class="form-group">
-				<label for="search-term">Movie Search Term</label>
-				<input type="text" class="form-control" id="searchTerm" placeholder="Star Wars">
-			</div>
-			<button type="submit" class="btn btn-primary" id="searchSubmit">Search</button>
-
-			</br>
-			</br>
-
-			<!-- Where the data table will go -->
-			<div id="data_table"></div>
+			<!-- Where the react components will render -->
+			<div id="root"></div>
 
 			<!-- Data Detail View Modal -->
 			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" id="detailView">
@@ -64,7 +58,7 @@
 				</div>
 			</div>
 
-			<script src="/imdb_api_app.js"></script>
+			<script src="/imdb_api_app.js" type="text/jsx"></script>
 			
 		</body>
 	</div>
