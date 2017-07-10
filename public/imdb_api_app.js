@@ -173,7 +173,7 @@ class MovieSearch extends React.Component {
 	render() {
 		return (
 			<div>
-	    		<div className="form-group">
+	    			<div className="form-group">
 					<label htmlFor="searchTerm">Movie Search Term</label>
 					<input type="text" 
 						   className="form-control" 
